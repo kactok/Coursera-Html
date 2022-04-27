@@ -12,7 +12,7 @@
         <ul>
             <li><a href="#section1">Sekcja 1</a></li>
             <li><a href="#section2">Sekcja 2</a></li>
-            <li><a href="#section3">Sekcja 3</a></li>
+            <li><a href="#section3">Poradnik yt</a></li>
             <li><a href="#section4">Sekcja 4</a></li> 
         </ul>
         </nav>
@@ -21,21 +21,21 @@
 <h1>Podstawy html</h1>
 <article>
     <h2>Artykul 1</h2>
-    jakis tam tekst
+    Jakis tam tekst
 </article>
-<div>Artykuly sluza do wypisania danego conetentu np jakiegos wpisu do bloga</div>
-<div>Ogolnie te wszystkie tagi to sa semantic tags i sa to bloki div tylko ze dzieki ich stosowaniu kod jest jasniejszy</div>
+<p>Artykuly sluza do wypisania danego conetentu np jakiegos wpisu do bloga</p>
+<p>Ogolnie te wszystkie tagi to sa semantic tags i sa to bloki div tylko ze dzieki ich stosowaniu kod jest jasniejszy</p>
 </section>
 <section>
 <h3>Tagi h1 - najwazniejsze, sa wazne przy wyszukiwaniu strony</h3> 
-    <div>Tylko jeden tag h1 na strone, pozostałe h2-h6 mozna uzywac wielokrotnie</div> 
-    <div>&nbs - sluzy do formowania tekstu w taki sposob zeby dane wyrazy zawsze byly kolo siebie</div>
-    <div>Html entities - pomagaja wyeliminowac bledy renderowania</div>
+    <p>Tylko jeden tag h1 na strone, pozostałe h2-h6 mozna uzywac wielokrotnie</p> 
+    <p>&nbs - sluzy do formowania tekstu w taki sposob zeby dane wyrazy zawsze byly kolo siebie</p>
+    <p>Html entities - pomagaja wyeliminowac bledy renderowania</p>
 </section>
 <section>
 <h3>Listy: </h3>
 UL - unordered list
-<div>Lista zakupow:</div>
+<p>Lista zakupow:</p>
 <ul><li>Pieczywo
         <ul>
         <li>Woda</li>
@@ -77,18 +77,96 @@ UL - unordered list
 <section id="section1">
 <div>Displaying Images</div>
   <h4>Sekcja 1</h4>
-     <img src="krolik.jpg"  alt="Cos poszlo nie tak" height="236" width="236"> 
+     <a href="#"><img src="./images/krolik.jpg"  alt="Cos poszlo nie tak" height="236" width="236"></a> 
   <div>Zdjecia moga byc wyswietlane przez link do strony lub z pliku</div> 
 </section>
 <section id="section2">
 <h4>Sekcja 2</h4>
-    <img src="https://cdn.7tv.app/emote/61d88e5f57c70f633ebcba78/4x"  alt="Cos poszlo nie tak" height="128" width="128"> 
+    <img src="https://cdn.7tv.app/emote/61d88e5f57c70f633ebcba78/4x" alt="Cos poszlo nie tak" height="128" width="128">
+    <p> br - line break</p>
+    <br>
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br>  
 </section>
-<section id="section3">
-<h4>Sekcja 3</h4>
+<section id="section3"> 
+<h4>Poradnik yt</h4>
+<p>Link do strony <sub> <strong>poprzez</strong></sub> klikniecie <sup>zdjecia</sup></p>
+<a href="https://pl.wikipedia.org/wiki/Kr%C3%B3lik" target="_blank"><img src="./images/krolik.jpg" alt="kroliczek" height="50"></a>
+<p> <strong>strong</strong> - pogrubienie, <sub>sub</sub> - dolny indeks, <sup>sup</sup> - gorny indeks</p>
+<p> <em>em</em> - pochylenie tekstu </p>
+<table>
+    <tr>
+        <th>Imie na j</th>
+        <th>Imie na p</th>
+        <th>Imie na s</th>
+    </tr>
+    <tr>
+       <td>john</td>
+       <td>peter</td> 
+       <td>sarah</td>  
+    </tr>
+    <tr>
+        <td>jason</td>
+        <td>paul</td> 
+        <td>sandra</td>  
+     </tr>
+     <tr>
+        <td>jake</td>
+        <td>piotr</td> 
+        <td>sylwia</td>  
+     </tr>
+</table>
+<p>Input: </p>
+<form action="" method="">
+    <label for='name'>First name: </label>
+    <input type="text" name="name" id="name">
+    <br>
+    <br>
+    <label for="Password">Password: </label>
+    <input type="password" placeholder="password" id="Password">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="email@gmail.com" id="email" value="email@email.com">
+    <br>
+    <br>
+    <p>Description</p>
+    <textarea name="" id="" cols="20" rows="10"></textarea>
+    <br>
+    <p>Other form elements: </p>
+    <p>Radio button - wybieramy tylko jednen z elementów(powinny miec taka sama nazwe)  </p>
+    <p>Please select your favorite coding language?</p>
+    <input type="radio" name="coding" id="" value="javaScript">JavaScript
+    <input type="radio" name="coding" id="" value="java">Java
+    <input type="radio" name="coding" id="" value="python">Python
+    <br>
+    <br>
+    <p>Checkbox - mozliwosc wybrania paru elementow</p>
+    <p>Please select your favorite coding language?</p>
+    <input type="checkbox" name="programming" id="" value="javaScript">JavaScript
+    <input type="checkbox" name="programming" id="" value="java">Java
+    <input type="checkbox" name="programming" id="" value="python">Python
+    <br>
+    <br>
+    <p>Select box - mozliwosc wybrania z listy</p>
+    <p>Please select your favorite coding language?</p>
+    <select name="languages" id="">
+        <option value="javaScript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Submit please"> 
+    <!-- <button type="submit">submit</button> -->
+</form>
 </section>
 <section id="section4">
-  <h4>Sekcja 4</h4>
+  <h4>Keyboard Shortcuts</h4>
+  <p> alt + kursor - kilka kursorów, ctrl + lewo/prawo - skakanie po słowach, alt + dół/góra - przeniesienie linii, ctrl+d - zaznaczanie tych samych elementów, ctrl + enter - nowa linia</p>
 </section>
 <aside>
     <h5>Jakies dodatkowe info</h5>
@@ -97,7 +175,7 @@ UL - unordered list
 <footer>
  <hr>
  <span> przechowywanie jakies linkow - ogolnie stopka/ tag -etykieta </span> 
- <a href="#Top"><div>Back to the top</div></a> 
+ <a href="#Top"><div>Back to the top</div> </a> 
 </footer>
 </body>
 </html>
